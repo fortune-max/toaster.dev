@@ -54,7 +54,7 @@ function fake(str, user) {
 
     if (functionName.indexOf('faker') === 0) {
       try {
-        return functionName.split('.').reduce((o, i) => o[i], { faker })()
+        return split.reduce((o, i) => o[i], { faker })()
       } catch (error) {
         return '[Error: faker function not found]'
       }
